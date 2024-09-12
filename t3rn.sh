@@ -118,7 +118,7 @@ start_service() {
 
 display_log() {
     echo "Displaying logs from the executor service:"
-    sudo journalctl -u executor.service -f
+    sudo journalctl -u executor.service -f -0 cat
 }
 
 # Execute the functions
